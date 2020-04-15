@@ -49,10 +49,15 @@ img#logo {
 }
 
 
+/* Principal */
+main{
+  padding: 30px;
+}
+
 /* Barra de Navegaçãos */
  .navbar {
     overflow: hidden;
-    background-color: #333;
+    background-color: #db4437;
     position: fixed; 
     top: 0;
     width: 100%; 
@@ -71,19 +76,52 @@ img#logo {
     background: #ddd;
     color: black;
   }
-  
-  main{
-      padding: 30px;
-  }
 
+  /* section news */
   section#news{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 10px;
-    grid-gap: 15px;
+    grid-gap: 30px;
+    overflow: hidden;
   }
 
+  article.new{
+    align-items: center;
+  }  
+  article.new img{
+    max-height: 315px;
+    display: block;
+    margin: 0 auto;
+  }  
+#BrazilMap{
+  width:100%;
+  /* max-height: 315px; */
+}
+  /* section aboutMe */  
+  section#aboutMe {
+    display: grid;
+    grid-template-columns: 0.6fr 0.4fr;
+  }
 
+  section#aboutMe div:nth-child(2) img{
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 300px;
+  }
+
+  section#aboutMe div:nth-child(2){
+    display: flex;
+    justify-content: center;
+  }
+
+  #github, #linkedin {
+    max-width: 72px;
+  }
+
+  #mail{
+    max-width: 100px;
+  }
 
 /* Ações para mobile*/  
 @media only screen and (max-device-width: 1366px) {

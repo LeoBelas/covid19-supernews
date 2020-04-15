@@ -16,6 +16,9 @@ body, html {
 iframe{
   border: none;
   margin: 0;
+  height: 280px;
+  width:100%;
+  max-width: 430px;
 }
 
 /* container */ 
@@ -245,6 +248,11 @@ section#contact form button:hover {
     height: 100%;
   }
 
+  /* Header */ 
+  .title h1{
+    font-size: 50px;
+  }
+  
     /* section news */
     main{
       margin: 0;
